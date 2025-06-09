@@ -1,6 +1,6 @@
 {
   "name": "@jcodigital/jcore-media",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "JCORE Media is a collection of scss mixins to handle breakpoints.",
   "scripts": {
     "format": "prettier --write src/**/*.scss",
