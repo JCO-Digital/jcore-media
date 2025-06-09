@@ -6,8 +6,7 @@
     "format": "prettier --write src/**/*.scss",
     "lint": "prettier --check src/**/*.scss",
     "devrelease": "pnpm version prerelease --preid=dev",
-    "prepublishOnly": "pnpm run build",
-    "preversion": "pnpm run lint && pnpm run build",
+    "preversion": "pnpm run lint",
     "postversion": "git push && git push --tags && pnpm publish --access public"
   },
   "devDependencies": {
