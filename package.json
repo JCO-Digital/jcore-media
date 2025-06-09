@@ -1,0 +1,28 @@
+{
+  "name": "@jcodigital/jcore-media",
+  "version": "0.1.0",
+  "description": "JCORE Media is a collection of scss mixins to handle breakpoints.",
+  "scripts": {
+    "format": "prettier --write src/**/*.scss",
+    "lint": "prettier --check src/**/*.scss",
+    "devrelease": "pnpm version prerelease --preid=dev",
+    "prepublishOnly": "pnpm run build",
+    "preversion": "pnpm run lint && pnpm run build",
+    "postversion": "git push && git push --tags && pnpm publish --access public"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.0",
+    "sass": "^1.88.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jco-digital/jcore-media.git"
+  },
+  "author": "JCO Digital <support@jco.fi>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jco-digital/jcore-media/issues"
+  },
+  "homepage": "https://github.com/jco-digital/jcore-media#readme",
+  "packageManager": "pnpm@9.8.0+sha512.8e4c3550fb500e808dbc30bb0ce4dd1eb614e30b1c55245f211591ec2cdf9c611cabd34e1364b42f564bd54b3945ed0f49d61d1bbf2ec9bd74b866fcdc723276"
+}
